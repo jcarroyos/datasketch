@@ -6,11 +6,11 @@ import { useParams } from 'react-router-dom'
 const baseURL = "http://localhost:3001/people/";
 const profileURL = "http://localhost:3002/profile/";
 
-const Profile = () => {
+const ProfileEdit = () => {
   const params = useParams()
   const [people, setProfile] = React.useState(null);
 
-  let url=profileURL+params.id+"/edit";
+  let url=profileURL+params.id;
   const handlePress = useCallback(async () => {
     
     // Checking if the link is supported for links with custom URL scheme.
@@ -24,7 +24,6 @@ const Profile = () => {
       Alert.alert(`Don't know how to open this URL: ${url}`);
     }
   }, [url]);
-  
 
   React.useEffect(() => {
     axios.get(baseURL+params.id).then((response) => {
@@ -35,13 +34,12 @@ const Profile = () => {
   
   if (!people) return null;
 
-
   return (
     <>
-      <h1>{people.nickname}'s profile page</h1>
+      <h1 style={styles.h1}>Edit {people.nickname}'s profile</h1>
       <View style={styles.boton}>
-          <Button color={'#4361eeff'} onPress={handlePress} title="Edit"/>
-        </View>
+          <Button color={'#f72585ff'} onPress={handlePress} title="Save"/>
+      </View>
       <div className='profile'>
         <figure>
           <img className='avatar' alt={people.nickname + "'s avatar"} src={people.picture} />
@@ -52,7 +50,6 @@ const Profile = () => {
         <span><strong>age:</strong> {people.age}</span>
         <span><strong>occupation:</strong> {people.occupation}</span>
         <span><strong>gender:</strong> {people.gender}</span>
-        
       </div>
     </>
   );
@@ -64,9 +61,12 @@ const styles = StyleSheet.create({
     width: 100,
     justifyContent: "center",
     float: 'right'
+  },
+  h1:{
+    color: '#f72585ff'
   }
 });
 
-export default Profile;
+export default ProfileEdit;
 
 

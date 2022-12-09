@@ -23,6 +23,9 @@ body {
   color: @trypan;
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
+  h1{
+    margin-left: 20px;
+  }
 }
 #root {
 margin: 2vw auto;
@@ -30,9 +33,14 @@ padding: 0;
 overflow-x: hidden;
 }
 .menu {
-    background-color: @pink;
+    background-color: fade(@trypan, 10%);
     padding: 10px;
+    font-weight: 600;
     li{ list-style: none;}
+    a, a:visited{
+        color: @flickr;
+        text-decoration: none;
+    }
 }
 .table {
     a, a:visited{
@@ -42,7 +50,6 @@ overflow-x: hidden;
     a:hover{
         color: @flickr;
     }
-    border: 1px dotted @pink;
     th{
         background-color: @vivid;
     }
@@ -63,7 +70,6 @@ overflow-x: hidden;
     }
 }
 .profile {
-    border: 1px dotted @pink;
     padding: 20px;
     figure{
         padding: 0;
