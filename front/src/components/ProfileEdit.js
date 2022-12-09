@@ -9,16 +9,18 @@ import { useNavigate, useParams } from 'react-router-dom'
 
 const initialValue = {
     fullname: "",
-    nickname : "",
-    age : "",
-    gender : ""
+    age: "",
+    occupation : "",
+    nickname: "",
+    gender: "",
+    picture: "",
 }
 
 
 const ProfileEdit = () => {
  
     const [user, setUser] = useState(initialValue);
-    const {fullname, nickname, age, gender} = user;
+    const {fullname, nickname, age, gender, occupation} = user;
 
     const { id } = useParams();
 
@@ -61,12 +63,16 @@ const ProfileEdit = () => {
                     <Input onChange={(e) => onValueChange(e)} name="fullname" value={fullname || ''} />
                 </FormControl>
                 <FormControl>
-                    <InputLabel>Nickname</InputLabel>
-                    <Input onChange={(e) => onValueChange(e)} name="nickname" value={nickname || ''} />
-                </FormControl>
-                <FormControl>
                     <InputLabel>Age</InputLabel>
                     <Input onChange={(e) => onValueChange(e)} name="age" value={age || ''} />
+                </FormControl>
+                <FormControl>
+                    <InputLabel>Occupation</InputLabel>
+                    <Input onChange={(e) => onValueChange(e)} name="occupation" value={occupation || ''} />
+                </FormControl>
+                <FormControl>
+                    <InputLabel>Nickname</InputLabel>
+                    <Input onChange={(e) => onValueChange(e)} name="nickname" value={nickname || ''} />
                 </FormControl>
                 <FormControl>
                     <InputLabel>Gender</InputLabel>
