@@ -7,10 +7,10 @@ const baseURL = "http://localhost:3001/people/";
 
 const columns = [
   { label: "Id", accessor: "id", sortable: true },
-  { label: "Picture", accessor: "picture", sortable: false },
+  { label: "picture", accessor: "picture", sortable: true },
   { label: "Full Name", accessor: "fullName", sortable: true },
-  { label: "age", accessor: "age", sortable: true },
-  { label: "Ocupation", accessor: "occupation", sortable: true, sortbyOrder: "true" }
+  { label: "age", accessor: "age", sortable: true, sortbyOrder: "true" },
+  { label: "Ocupation", accessor: "occupation", sortable: true }
 ];
 
 const App = () => {
