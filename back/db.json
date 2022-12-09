@@ -2,7 +2,7 @@
   "people": [
     {
       "id": 1,
-      "fullName": "John Doe",
+      "fullname": "John Doe",
       "age": 32,
       "occupation": "Software Developer",
       "nickname": "Johnny",
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "fullName": "Jane Smith",
+      "fullname": "Jane Smith",
       "age": 27,
       "occupation": "Doctor",
       "nickname": "Jane",
@@ -20,7 +20,7 @@
     },
     {
       "id": 3,
-      "fullName": "Bob Johnson",
+      "fullname": "Bob Johnson",
       "age": 45,
       "occupation": "Teacher",
       "nickname": "Bobby",
@@ -29,7 +29,7 @@
     },
     {
       "id": 4,
-      "fullName": "Alice Williams",
+      "fullname": "Alice Williams",
       "age": 29,
       "occupation": "Lawyer",
       "nickname": "Ali",
@@ -38,7 +38,7 @@
     },
     {
       "id": 5,
-      "fullName": "Michael Brown",
+      "fullname": "Michael Brown",
       "age": 41,
       "occupation": "Construction Worker",
       "nickname": "Mike",
@@ -47,7 +47,7 @@
     },
     {
       "id": 6,
-      "fullName": "Emily Davis",
+      "fullname": "Emily Davis",
       "age": 36,
       "occupation": "Nurse",
       "nickname": "Em",
@@ -56,7 +56,7 @@
     },
     {
       "id": 7,
-      "fullName": "David Anderson",
+      "fullname": "David Anderson",
       "age": 38,
       "occupation": "Police Officer",
       "nickname": "Dave",
@@ -65,7 +65,7 @@
     },
     {
       "id": 8,
-      "fullName": "Samantha Taylor",
+      "fullname": "Samantha Taylor",
       "age": 26,
       "occupation": "Graphic Designer",
       "nickname": "Sam",
@@ -74,7 +74,7 @@
     },
     {
       "id": 9,
-      "fullName": "William Rodriguez",
+      "fullname": "William Rodriguez",
       "age": 33,
       "occupation": "Accountant",
       "nickname": "Will",
@@ -83,7 +83,7 @@
     },
     {
       "id": 10,
-      "fullName": "Ashley Johnson",
+      "fullname": "Ashley Johnson",
       "age": 30,
       "occupation": "Salespeople",
       "nickname": "Ash",

@@ -9,20 +9,28 @@ body {
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
 }
+body h1 {
+  margin-left: 20px;
+}
 #root {
   margin: 2vw auto;
   padding: 0;
   overflow-x: hidden;
 }
 .menu {
-  background-color: #cdb4dbff;
+  background-color: rgba(2, 48, 71, 0.1);
   padding: 10px;
+  font-weight: 600;
 }
 .menu li {
   list-style: none;
 }
+.menu a,
+.menu a:visited {
+  color: #f72585ff;
+  text-decoration: none;
+}
 .table {
-  border: 1px dotted #cdb4dbff;
   padding: 20px;
   min-width: 340px;
   margin: 0 auto;
@@ -51,7 +59,6 @@ body {
   height: auto;
 }
 .profile {
-  border: 1px dotted #cdb4dbff;
   padding: 20px;
 }
 .profile figure {

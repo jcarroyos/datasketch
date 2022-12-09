@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import App from './App';
 import Navigation from './components/Navigation';
+import ProfileEdit from './components/ProfileEdit';
 import Profile from './components/Profile';
 
 const container = document.getElementById('root');
@@ -15,6 +16,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App/>}/>
         <Route path="/profile/:id" element={<Profile/>}/>
+        <Route path="/profile/:id/edit" element={<ProfileEdit/>}/>
       </Routes>
     </BrowserRouter>
   </div>
