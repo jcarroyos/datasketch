@@ -5,6 +5,8 @@ import App from './App';
 import Navigation from './components/Navigation';
 import ProfileEdit from './components/ProfileEdit';
 import Profile from './components/Profile';
+import TaskPersonID from './components/TaskPersonID';
+import TaskList from './components/TaskList';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -16,6 +18,8 @@ root.render(
       <Routes>
         <Route path="/" element={<App/>}/>
         <Route path="/profile/:id" element={<Profile/>}/>
+        <Route path="/tasks/" element={<TaskList/>}/>
+        <Route path="/task/:personId" element={<TaskPersonID/>}/>
         <Route path="/profile/:id/edit" element={<ProfileEdit/>}/>
       </Routes>
     </BrowserRouter>

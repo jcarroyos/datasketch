@@ -97,8 +97,8 @@
       "title": "Task 1",
       "description": "This is the first task on the list.",
       "completed": false,
-      "startDate": "2022-12-04",
-      "endDate": null,
+      "startdate": "2022-12-04",
+      "enddate": null,
       "personId": 1
     },
     {
@@ -106,8 +106,8 @@
       "title": "Task 2",
       "description": "This is the second task on the list.",
       "completed": true,
-      "startDate": "2022-12-04",
-      "endDate": "2022-12-05",
+      "startdate": "2022-12-04",
+      "enddate": "2022-12-05",
       "personId": 2
     },
     {
@@ -115,8 +115,8 @@
       "title": "Task 3",
       "description": "This is the third task on the list.",
       "completed": false,
-      "startDate": "2022-12-04",
-      "endDate": null,
+      "startdate": "2022-12-04",
+      "enddate": null,
       "personId": 3
     },
     {
@@ -124,8 +124,8 @@
       "title": "Task 4",
       "description": "This is the fourth task on the list.",
       "completed": true,
-      "startDate": "2022-12-04",
-      "endDate": "2022-12-06",
+      "startdate": "2022-12-04",
+      "enddate": "2022-12-06",
       "personId": 4
     },
     {
@@ -133,8 +133,8 @@
       "title": "Task 5",
       "description": "This is the fifth task on the list.",
       "completed": false,
-      "startDate": "2022-12-04",
-      "endDate": null,
+      "startdate": "2022-12-04",
+      "enddate": null,
       "personId": 5
     },
     {
@@ -142,8 +142,8 @@
       "title": "Task 6",
       "description": "This is the sixth task on the list.",
       "completed": true,
-      "startDate": "2022-12-04",
-      "endDate": "2022-12-07",
+      "startdate": "2022-12-04",
+      "enddate": "2022-12-07",
       "personId": 6
     },
     {
@@ -151,8 +151,8 @@
       "title": "Task 7",
       "description": "This is the seventh task on the list.",
       "completed": false,
-      "startDate": "2022-12-04",
-      "endDate": null,
+      "startdate": "2022-12-04",
+      "enddate": null,
       "personId": 7
     },
     {
@@ -160,8 +160,8 @@
       "title": "Task 8",
       "description": "This is the eighth task on the list.",
       "completed": true,
-      "startDate": "2022-12-04",
-      "endDate": "2022-12-08",
+      "startdate": "2022-12-04",
+      "enddate": "2022-12-08",
       "personId": 8
     },
     {
@@ -169,8 +169,8 @@
       "title": "Task 9",
       "description": "This is the ninth task on the list.",
       "completed": false,
-      "startDate": "2022-12-04",
-      "endDate": null,
+      "startdate": "2022-12-04",
+      "enddate": null,
       "personId": 9
     },
     {
@@ -178,16 +178,16 @@
       "title": "Task 10",
       "description": "This is the tenth task on the list.",
       "completed": true,
-      "startDate": "2022-12-04",
-      "endDate": null
+      "startdate": "2022-12-04",
+      "enddate": null
     },
     {
       "id": 11,
       "title": "Task 11",
       "description": "This is the eleventh task on the list.",
       "completed": false,
-      "startDate": "2022-12-04",
-      "endDate": null,
+      "startdate": "2022-12-04",
+      "enddate": null,
       "personId": 1
     },
     {
@@ -195,8 +195,8 @@
       "title": "Task 12",
       "description": "This is the twelfth task on the list.",
       "completed": true,
-      "startDate": "2022-12-04",
-      "endDate": "2022-12-05",
+      "startdate": "2022-12-04",
+      "enddate": "2022-12-05",
       "personId": 2
     },
     {
@@ -204,8 +204,8 @@
       "title": "Task 13",
       "description": "This is the thirteenth task on the list.",
       "completed": false,
-      "startDate": "2022-12-04",
-      "endDate": null,
+      "startdate": "2022-12-04",
+      "enddate": null,
       "personId": 3
     },
     {
@@ -213,8 +213,8 @@
       "title": "Task 14",
       "description": "This is the fourteenth task on the list.",
       "completed": true,
-      "startDate": "2022-12-04",
-      "endDate": "2022-12-06",
+      "startdate": "2022-12-04",
+      "enddate": "2022-12-06",
       "personId": 4
     },
     {
@@ -222,8 +222,8 @@
       "title": "Task 15",
       "description": "This is the fifteenth task on the list.",
       "completed": false,
-      "startDate": "2022-12-04",
-      "endDate": null,
+      "startdate": "2022-12-04",
+      "enddate": null,
       "personId": 5
     },
     {
@@ -231,8 +231,8 @@
       "title": "Task 16",
       "description": "This is the sixteenth task on the list.",
       "completed": false,
-      "startDate": "2022-12-04",
-      "endDate": null,
+      "startdate": "2022-12-04",
+      "enddate": null,
       "personId": 6
     },
     {
@@ -240,8 +240,8 @@
       "title": "Task 17",
       "description": "This is the seventeenth task on the list.",
       "completed": true,
-      "startDate": "2022-12-04",
-      "endDate": "2022-12-05",
+      "startdate": "2022-12-04",
+      "enddate": "2022-12-05",
       "personId": 7
     },
     {
@@ -249,8 +249,8 @@
       "title": "Task 18",
       "description": "This is the eighteenth task on the list.",
       "completed": false,
-      "startDate": "2022-12-04",
-      "endDate": null,
+      "startdate": "2022-12-04",
+      "enddate": null,
       "personId": 8
     },
     {
@@ -258,8 +258,8 @@
       "title": "Task 19",
       "description": "This is the nineteenth task on the list.",
       "completed": true,
-      "startDate": "2022-12-04",
-      "endDate": "2022-12-06",
+      "startdate": "2022-12-04",
+      "enddate": "2022-12-06",
       "personId": 9
     },
     {
@@ -267,8 +267,8 @@
       "title": "Task 20",
       "description": "This is the twentieth task on the list.",
       "completed": false,
-      "startDate": "2022-12-04",
-      "endDate": null,
+      "startdate": "2022-12-04",
+      "enddate": null,
       "personId": 10
     }
   ]
