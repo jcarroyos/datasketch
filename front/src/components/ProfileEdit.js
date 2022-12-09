@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 //import axios from "axios";
-import { Container, Typography, FormControl, InputLabel, Input, Box, FormGroup, Button } from '@material-ui/core';
+import { Container, FormControl, InputLabel, Input, Box, FormGroup, Button } from '@material-ui/core';
 import { editUser, getallUsers} from './service/api';
 import { useNavigate, useParams } from 'react-router-dom'
 
@@ -54,9 +54,9 @@ const ProfileEdit = () => {
     
   return (
     <>
-        <Container maxWidth="sm">
+        <h1>Edit user profile data</h1>
+        <Container>
             <Box my={5}>
-            <Typography variant="h5" align="center">Update User Details</Typography>
             <FormGroup>
                 <FormControl>
                     <InputLabel>Fullname</InputLabel>
