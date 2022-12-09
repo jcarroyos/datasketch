@@ -1,0 +1,68 @@
+@import 'index.css';
+/**** base colors ***/
+/**** contrast colors ***/
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #023047;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+#root {
+  margin: 2vw auto;
+  padding: 0;
+  overflow-x: hidden;
+}
+.menu {
+  background-color: #cdb4dbff;
+  padding: 10px;
+}
+.menu li {
+  list-style: none;
+}
+.table {
+  border: 1px dotted #cdb4dbff;
+  padding: 20px;
+  min-width: 340px;
+  margin: 0 auto;
+}
+.table a,
+.table a:visited {
+  color: #4361eeff;
+  text-decoration: none;
+}
+.table a:hover {
+  color: #f72585ff;
+}
+.table th {
+  background-color: #4cc9f0ff;
+}
+.table td {
+  background-color: #bde0feff;
+  padding: 10px;
+}
+.table figure {
+  padding: 0;
+  margin: 0;
+}
+.table figure img.avatar {
+  width: 100px;
+  height: auto;
+}
+.profile {
+  border: 1px dotted #cdb4dbff;
+  padding: 20px;
+}
+.profile figure {
+  padding: 0;
+  margin: 0;
+}
+.profile figure img.avatar {
+  width: 100px;
+  height: auto;
+}
+.profile span {
+  display: block;
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,80 @@
+@import './index.css';
+
+/**** base colors ***/
+@pink: #cdb4dbff;
+@orchid: #ffc8ddff;
+@nadeshiko: #ffafccff;
+@uranian: #bde0feff;
+@baby: #a2d2ffff;
+
+/**** contrast colors ***/
+
+@flickr: #f72585ff;
+@purple: #7209b7ff;
+@trypan: #023047;
+@ultramarine: #4361eeff;
+@vivid: #4cc9f0ff;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: @trypan;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+#root {
+margin: 2vw auto;
+padding: 0;
+overflow-x: hidden;
+}
+.menu {
+    background-color: @pink;
+    padding: 10px;
+    li{ list-style: none;}
+}
+.table {
+    a, a:visited{
+        color: @ultramarine;
+        text-decoration: none;
+    }
+    a:hover{
+        color: @flickr;
+    }
+    border: 1px dotted @pink;
+    th{
+        background-color: @vivid;
+    }
+    td{
+        background-color: @uranian;
+        padding:10px;
+    }
+    padding: 20px;
+    min-width: 340px;
+    margin: 0 auto;
+    figure{
+        padding: 0;
+        margin: 0;
+        img.avatar {
+            width: 100px;
+            height: auto;
+        }
+    }
+}
+.profile {
+    border: 1px dotted @pink;
+    padding: 20px;
+    figure{
+        padding: 0;
+        margin: 0;
+        img.avatar {
+            width: 100px;
+            height: auto;
+            
+        }
+    }
+    span {
+        display: block;
+    }
+}

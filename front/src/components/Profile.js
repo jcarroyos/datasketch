@@ -19,17 +19,18 @@ const Profile = () => {
 
   return (
     <>
-    <div className='people'>
-      <figure>
-        <img className='avatar' alt={people.nickname + "'s avatar"} src={people.picture} />
-      </figure>
-      <h2>{people.nickname}</h2>
-      <span><strong>id:</strong> {people.id}</span>
-      <span><strong>fullName:</strong> {people.fullName}</span>
-      <span><strong>age:</strong> {people.age}</span>
-      <span><strong>occupation:</strong> {people.occupation}</span>
-      <span><strong>gender:</strong> {people.gender}</span>
-    </div>
+      <h1>{people.nickname}'s profile page</h1>
+      <div className='profile'>
+        <figure>
+          <img className='avatar' alt={people.nickname + "'s avatar"} src={people.picture} />
+        </figure>
+        <h2>{people.nickname}</h2>
+        <span><strong>id:</strong> {people.id}</span>
+        <span><strong>fullName:</strong> {people.fullName}</span>
+        <span><strong>age:</strong> {people.age}</span>
+        <span><strong>occupation:</strong> {people.occupation}</span>
+        <span><strong>gender:</strong> {people.gender}</span>
+      </div>
     </>
   );
 };
