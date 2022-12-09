@@ -8,12 +8,12 @@ const baseURL = "http://localhost:3001/tasks/";
 
 const columns = [
   { label: "Id", accessor: "id", sortable: true },
-  { label: "title", accessor: "title", sortable: false },
-  { label: "description", accessor: "description", sortable: true },
-  { label: "completed", accessor: "completed", sortable: true, sortbyOrder: "true" },
-  { label: "startDate", accessor: "startDate", sortable: true },
-  { label: "endDate", accessor: "endDate", sortable: true },
-  { label: "personId", accessor: "personId", sortable: true }
+  { label: "Title", accessor: "title", sortable: false },
+  { label: "Description", accessor: "description", sortable: true },
+  { label: "Completed", accessor: "completed", sortable: true, sortbyOrder: "true" },
+  { label: "Start date", accessor: "startdate", sortable: true },
+  { label: "End date", accessor: "enddate", sortable: true },
+  { label: "Person id", accessor: "personid", sortable: true }
 ];
 
 const App = () => {
