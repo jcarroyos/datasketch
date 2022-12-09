@@ -7,9 +7,9 @@ const baseURL = "http://localhost:3001/people/";
 
 const columns = [
   { label: "Id", accessor: "id", sortable: true },
-  { label: "picture", accessor: "picture", sortable: true },
+  { label: "Picture", accessor: "picture", sortable: true },
   { label: "Full Name", accessor: "fullName", sortable: true },
-  { label: "age", accessor: "age", sortable: true, sortbyOrder: "true" },
+  { label: "Age", accessor: "age", sortable: true, sortbyOrder: "true" },
   { label: "Ocupation", accessor: "occupation", sortable: true }
 ];
 
@@ -27,9 +27,8 @@ const App = () => {
 
   return (
     <div className="table_container">
-      <h1>Reusable sortable table with React</h1>
+      <h1>Frontend coding test by @jcarroyos</h1>
       <Table
-        caption="Developers currently enrolled in this course. The table below is ordered (descending) by the Gender column."
         data={people}
         columns={columns}
       />
