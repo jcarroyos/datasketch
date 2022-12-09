@@ -27,9 +27,9 @@ const TaskPersonID = () => {
         <span><strong>id:</strong> {tasks.id}</span>
         <span><strong>description:</strong> {tasks.description}</span>
         <span><strong>completed:</strong> {tasks.completed}</span>
-        <span><strong>startDate:</strong> {tasks.startDate}</span>
-        <span><strong>endDate:</strong> {tasks.endDate}</span>
-        <span><strong>personId:</strong> {tasks.personId}</span>
+        <span><strong>startDate:</strong> {tasks.startdate}</span>
+        <span><strong>endDate:</strong> {tasks.enddate}</span>
+        <span><strong>personId:</strong> {tasks.personid}</span>
       </div>
     </>
   );
