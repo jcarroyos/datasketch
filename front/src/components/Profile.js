@@ -48,10 +48,10 @@ const Profile = () => {
         </figure>
         <h2>{people.nickname}</h2>
         <span><strong>id:</strong> {people.id}</span>
-        <span><strong>fullName:</strong> {people.fullName}</span>
-        <span><strong>age:</strong> {people.age}</span>
-        <span><strong>occupation:</strong> {people.occupation}</span>
-        <span><strong>gender:</strong> {people.gender}</span>
+        <span><strong>Fullname:</strong> {people.fullname}</span>
+        <span><strong>Age:</strong> {people.age}</span>
+        <span><strong>Occupation:</strong> {people.occupation}</span>
+        <span><strong>Gender:</strong> {people.gender}</span>
         
       </div>
     </>
