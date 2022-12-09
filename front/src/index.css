@@ -64,6 +64,11 @@ th.down {
   padding: 8px 20px;
 }
 
+.table figure > img{
+  width: 150px;
+  height: auto;
+}
+
 .table tbody tr:first-child td {
   border-top: none;
 }
