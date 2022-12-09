@@ -20,7 +20,7 @@ function getDefaultSorting(defaultTableData, columns) {
         numeric: true,
       });
 
-    return sortbyOrder === "asc" ? ascending : -ascending;
+    return sortbyOrder === "asc" ? -ascending : ascending;
   });
   return sorted;
 }
