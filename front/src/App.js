@@ -1,27 +1,37 @@
+import React from 'react';
+import axios from "axios";
+
 import Table from "./components/Table";
-import tableData1 from "./tableData1.json";
-import RenderAnotherTable from "./components/RenderAnotherTable";
+
+const baseURL = "http://localhost:3001/people/";
 
 const columns = [
-  { label: "Full Name", accessor: "full_name", sortable: true },
-  { label: "Email", accessor: "email", sortable: false },
-  { label: "Gender", accessor: "gender", sortable: true, sortbyOrder: "desc" },
-  { label: "Age", accessor: "age", sortable: true },
-  { label: "Start date", accessor: "start_date", sortable: true },
+  { label: "Id", accessor: "id", sortable: true },
+  { label: "Full Name", accessor: "fullName", sortable: true },
+  { label: "age", accessor: "age", sortable: true },
+  { label: "Ocupation", accessor: "occupation", sortable: true, sortbyOrder: "true" }
 ];
 
 const App = () => {
+
+  const [people, setPeople] = React.useState(null);
+
+  React.useEffect(() => {
+    axios.get(baseURL).then((response) => {
+      setPeople(response.data);
+    });
+  }, []);
+  
+  if (!people) return null;
+
   return (
     <div className="table_container">
       <h1>Reusable sortable table with React</h1>
       <Table
         caption="Developers currently enrolled in this course. The table below is ordered (descending) by the Gender column."
-        data={tableData1}
+        data={people}
         columns={columns}
       />
-      <br />
-      <RenderAnotherTable />
-      <br />
     </div>
   );
 };
