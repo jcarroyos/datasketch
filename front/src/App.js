@@ -33,7 +33,7 @@ const App = () => {
         data={people}
         columns={columns}
       />
-    </>
+      </>
   );
 };
 

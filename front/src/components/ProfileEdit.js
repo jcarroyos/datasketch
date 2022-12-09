@@ -1,71 +1,89 @@
-import React, {useCallback} from 'react';
-import axios from "axios";
-import { Alert, Button, Linking, StyleSheet, View } from 'react-native';
-import { useParams } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+//import axios from "axios";
+import { Container, Typography, FormControl, InputLabel, Input, Box, FormGroup, Button } from '@material-ui/core';
+import { editUser, getallUsers} from './service/api';
+import { useNavigate, useParams } from 'react-router-dom'
 
-const baseURL = "http://localhost:3001/people/";
-const profileURL = "http://localhost:3002/profile/";
+//const baseURL = "http://localhost:3001/people/";
+//const profileURL = "http://localhost:3002/profile/";
+
+const initialValue = {
+    fullname: "",
+    nickname : "",
+    age : "",
+    gender : ""
+}
+
 
 const ProfileEdit = () => {
-  const params = useParams()
-  const [people, setProfile] = React.useState(null);
+ 
+    const [user, setUser] = useState(initialValue);
+    const {fullname, nickname, age, gender} = user;
 
-  let url=profileURL+params.id;
-  const handlePress = useCallback(async () => {
+    const { id } = useParams();
+
+    useEffect(() => {
+        loadUserData();
+        // eslint-disable-next-line
+    },[]);
     
-    // Checking if the link is supported for links with custom URL scheme.
-    const supported = await Linking.canOpenURL(url);
-
-    if (supported) {
-      // Opening the link with some app, if the URL scheme is "http" the web link should be opened
-      // by some browser in the mobile
-      await Linking.openURL(url, '_self');
-    } else {
-      Alert.alert(`Don't know how to open this URL: ${url}`);
+    const loadUserData = async () =>{
+        const response = await getallUsers(id);
+        setUser(response.data);
     }
-  }, [url]);
 
-  React.useEffect(() => {
-    axios.get(baseURL+params.id).then((response) => {
-      setProfile(response.data);
-    });
-    // eslint-disable-next-line
-  }, []);
-  
-  if (!people) return null;
+    const navigate = useNavigate();
+    const onValueChange = (e) =>
+    {
+        console.log(e);
+        console.log(e.target.value);
+        setUser({...user, [e.target.name]: e.target.value});
+        console.log(user);
+    }
 
+    const editUserDetails = async () =>{
+       await editUser(id,user);
+       navigate('/profile/'+id);
+    }
+
+    const sendSubmit = () => {
+        navigate("/profile/"+id);
+    };
+    
   return (
     <>
-      <h1 style={styles.h1}>Edit {people.nickname}'s profile</h1>
-      <View style={styles.boton}>
-          <Button color={'#f72585ff'} onPress={handlePress} title="Save"/>
-      </View>
-      <div className='profile'>
-        <figure>
-          <img className='avatar' alt={people.nickname + "'s avatar"} src={people.picture} />
-        </figure>
-        <h2>{people.nickname}</h2>
-        <span><strong>id:</strong> {people.id}</span>
-        <span><strong>fullName:</strong> {people.fullName}</span>
-        <span><strong>age:</strong> {people.age}</span>
-        <span><strong>occupation:</strong> {people.occupation}</span>
-        <span><strong>gender:</strong> {people.gender}</span>
-      </div>
+        <Container maxWidth="sm">
+            <Box my={5}>
+            <Typography variant="h5" align="center">Update User Details</Typography>
+            <FormGroup>
+                <FormControl>
+                    <InputLabel>Fullname</InputLabel>
+                    <Input onChange={(e) => onValueChange(e)} name="fullname" value={fullname || ''} />
+                </FormControl>
+                <FormControl>
+                    <InputLabel>Nickname</InputLabel>
+                    <Input onChange={(e) => onValueChange(e)} name="nickname" value={nickname || ''} />
+                </FormControl>
+                <FormControl>
+                    <InputLabel>Age</InputLabel>
+                    <Input onChange={(e) => onValueChange(e)} name="age" value={age || ''} />
+                </FormControl>
+                <FormControl>
+                    <InputLabel>Gender</InputLabel>
+                    <Input onChange={(e) => onValueChange(e)} name="gender" value={gender || ''} />
+                </FormControl>
+                <Box my={3}>
+                    <Button variant="contained" onClick={() => editUserDetails() } color="primary" align="center">Update User</Button>
+                    <Button onClick={()=> sendSubmit()} variant="contained" color="secondary" align="center" style={{margin: '0px 20px'}}>Cancel</Button>
+                </Box>
+            </FormGroup>
+            </Box>
+        </Container>
     </>
   );
 };
 
-const styles = StyleSheet.create({
-  boton: {
-    align: 'right',
-    width: 100,
-    justifyContent: "center",
-    float: 'right'
-  },
-  h1:{
-    color: '#f72585ff'
-  }
-});
+
 
 export default ProfileEdit;
 
