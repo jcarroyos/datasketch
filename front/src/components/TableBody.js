@@ -11,12 +11,18 @@ const TableBody = ({ tableData, columns }) => {
                 return (
                     <td key={accessor}>
                         <figure>
+                          <a target="_self" href={'/profile/' + data.id}>
                             <img className="avatar" alt={data.nickname+"'s avatar"} key={accessor} src={tData}/>
+                          </a>
                         </figure>
                     </td>
                 );
               }
-              return <td key={accessor}>{tData}</td>;
+              return <td key={accessor}>
+                  <a target="_self" href={'/profile/' + data.id}>
+                    {tData}
+                  </a>
+                </td>;
             })}
           </tr>
         );
